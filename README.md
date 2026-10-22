@@ -1,37 +1,74 @@
+<div align="center">
 
+# Mohit Chahal
 
-<p>
-  <a href="mailto:work.mohitchahal@gmail.com" target="_blank"><img height="28" src = "https://img.shields.io/badge/gmail-c14438?&style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/itsmohitchahal/" target="_blank"> <img height="28" src = "https://img.shields.io/badge/-LinkedIn-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white"></a>
-  <a href="https://mohitchahal.com/" target="_blank"><img height="28" src = "https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139"></a>
-</p>
+**Lead Software Engineer · Backends and real-time systems**
 
-<img align ="right" src = "https://raw.githubusercontent.com/pratik-kale20/pratik-kale20/main/linux.png" width="250" height="250">
+6 years building software, 4 of them full-time. I design APIs, data models and real-time systems<br>
+in Node.js, NestJS, PostgreSQL and Redis, and I lead the engineers who build on them.
 
-Hi there! 👋
+<a href="https://mohitchahal.com/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=astro&logoColor=white" alt="Portfolio: mohitchahal.com"></a>
+<a href="https://www.linkedin.com/in/itsmohitchahal/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:contact@mohitchahal.com"><img src="https://img.shields.io/badge/Email-C14438?style=for-the-badge" alt="Email: contact@mohitchahal.com"></a>
 
-- 💼 I'm a Full Stack Web Developer
-- 🌱 Most familiar with the MERN Stack
-<br></br>
+</div>
 
-<h2><img src="https://media.giphy.com/media/VdoIFLsMIlwzfKD520/giphy.gif" height="20"> Technologies I'm Familiar With</h2>                                                                                                                       
+<br>
 
-<p>
-<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height="25">
-<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" height="25">
-<img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" height="25"> 
-<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" height="25">
-<img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" height="25"><img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" height="25">
-<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" height="25">
-<img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" height="25"> 
-<img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3" height="25"> 
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" height="25">
-<img src="https://img.shields.io/badge/-Linux-black?style=flat-square&logo=Linux" height="25"> 
-<img src="https://img.shields.io/badge/-Git-black?style=flat-square&logo=git" height="25"> 
-<img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github" height="25"> 
+## What I do
 
+- **Lead engineering** at Innovizia Technologies across several projects at once: backend architecture, infrastructure planning, and design and code reviews for frontend and backend engineers
+- **Build APIs that serve live production traffic**, then load-test them with simulated real users and go after the slow tail until the p95 and p99 come down
+- **Ship the whole slice** when a project needs it: the schema, the API, the React and Next.js front-ends, Docker and the CI/CD pipeline
 
-<img src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" height="25">
-<img src="https://img.shields.io/badge/-Canva-20c4cb?style=flat-square&logo=canva&logoColor=white" height="25">
-</p>
+## Open source: Gym Ledger
 
+<table>
+<tr>
+<td width="250" valign="top">
+<a href="https://github.com/gym-ledger/web"><img src="https://raw.githubusercontent.com/gym-ledger/web/main/.github/assets/demo.gif" width="250" alt="Gym Ledger on a phone: home, progress, muscle map, body weight and logging a set"></a>
+</td>
+<td valign="top">
+
+**A self-hostable workout tracker for lifters.** Log every set at the gym, even with no signal, follow and edit training plans, and watch your strength and body weight move over time.
+
+- **Offline-first PWA:** sets logged without signal queue on the phone and sync in batches when the connection returns
+- **Sessions done properly:** passwordless OTP, one session per device, refresh tokens that rotate on every use with reuse detection
+- **Live notifications over SSE:** each stream lives no longer than its access token and closes the moment its session is signed out
+- **Hardened API:** strict zod validation on every route, Redis-backed rate limits, a self-hosted proof-of-work CAPTCHA, an audit log of admin changes
+- **Privacy built in:** data export, account deletion with a 30-day grace period, AI check-ins only on opt-in
+- **Ops included:** one-command Docker stack, CI and deploys with GitHub Actions, encrypted nightly backups and an optional streaming standby
+
+| | |
+|---|---|
+| [**gym-ledger/api**](https://github.com/gym-ledger/api) | The REST API · Express 5, TypeScript, PostgreSQL, Redis |
+| [**gym-ledger/web**](https://github.com/gym-ledger/web) | The app people train with · Next.js 16, React 19, Tailwind CSS |
+| [**gym-ledger/admin**](https://github.com/gym-ledger/admin) | The admin panel · exercise library, versioned program builder, analytics |
+
+</td>
+</tr>
+</table>
+
+## Building next: Restaurant OS
+
+A multi-tenant platform for restaurant groups: one API serves the counter, the kitchen, online ordering and the people running the business. **Open-sourcing soon.**
+
+- Offline-first point of sale: orders are saved on the device during service and synced in the background, so a dropped connection never loses a bill
+- Kitchen and online-ordering APIs with real-time updates over WebSocket
+- A self-hosted OpenStreetMap geocoder behind a gateway with per-project allowlists, so there are no paid map keys or quotas
+- Load-tested with a simulated restaurant group (POS terminals going offline and back, kitchen screens, dashboards, QR ordering):
+
+| Throughput | p95 latency | p99 latency |
+|:---:|:---:|:---:|
+| **100 req/s** | **27 ms** | **101 ms** |
+
+<sub>On a 2 vCPU / 8 GB server that was also running two other live projects. Method: <a href="https://mohitchahal.com/#testing">how I load-test</a>.</sub>
+
+## Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,nodejs,nestjs,express,postgres,prisma,redis,mongodb,docker,githubactions,cloudflare,linux,react,nextjs,tailwind,astro,js,py,git&perline=10&theme=dark">
+  <img alt="TypeScript, Node.js, NestJS, Express, PostgreSQL, Prisma, Redis, MongoDB, Docker, GitHub Actions, Cloudflare, Linux, React, Next.js, Tailwind CSS, Astro, JavaScript, Python, Git" src="https://skillicons.dev/icons?i=ts,nodejs,nestjs,express,postgres,prisma,redis,mongodb,docker,githubactions,cloudflare,linux,react,nextjs,tailwind,astro,js,py,git&perline=10&theme=light">
+</picture>
+
+Also: Drizzle, Fastify, WebSocket, SSE, Zod.
